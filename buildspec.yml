@@ -5,4 +5,4 @@ phases:
     commands:
       - datetag=$(echo `date +%Y%m%d_%H%M%S`)
       - docker build -t golang-web .
-      
+      - aws s3 cp golang-web s3://golang-web-archive/golang-web/build_outp/golang-web-image
