@@ -20,5 +20,5 @@ $ docker run -p 8080:8080 -d golang-web:latest
 
 You can enter the listed urls above in your browser.
 + [http://localhost:8080/hello](http://localhost:8080/hello)
-+ + [http://localhost:8080/health](http://localhost:8080/health)
++ [http://localhost:8080/health](http://localhost:8080/health)
 + [http://localhost:8080/hello?user=Pin](http://localhost:8080/hello?user=Pin)
