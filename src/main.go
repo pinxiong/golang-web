@@ -31,5 +31,10 @@ func main() {
 		})
 		log.Infof("Received a request! user:%v", user)
 	})
+	router.GET("/health", func(context *gin.Context) {
+		context.JSON(200, gin.H{
+			"message": "OK",
+		})
+	})
 	router.Run()
 }
