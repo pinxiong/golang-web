@@ -11,13 +11,7 @@ func init() {
 	log.SetFormatter(&log.JSONFormatter{
 		DisableTimestamp:  false,
 		DisableHTMLEscape: false,
-		FieldMap: log.FieldMap{
-			log.FieldKeyTime:  "timestamp",
-			log.FieldKeyLevel: "level",
-			log.FieldKeyMsg:   "message",
-			log.FieldKeyFunc:  "caller",
-		},
-		PrettyPrint: false,
+		PrettyPrint:       false,
 	})
 
 }
