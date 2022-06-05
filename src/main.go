@@ -34,7 +34,7 @@ func start(context *gin.Context) {
 	go func() {
 		log.Info("It is starting....")
 		for keepRunning {
-			time.Sleep(time.Duration(1) * time.Nanosecond)
+			time.Sleep(time.Duration(1) * time.Microsecond)
 		}
 		log.Info("It stopped.")
 	}()
